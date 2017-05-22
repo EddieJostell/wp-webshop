@@ -7,8 +7,8 @@ Template name: About Template
 */
 get_header();
  ?>
- <div id="primary" class="content-area about-content">
-		<main id="main" class="site-main" role="main">
+ <div class="about-content">
+		<main>
 
 			<?php while ( have_posts() ) : the_post();
 

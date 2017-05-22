@@ -7,7 +7,7 @@
 */
 
 #content {
-	background-color: black;
+	background-color: #f27120;
 }
 
 #content p {
@@ -21,6 +21,8 @@
 /*CONTACT PAGE CSS*/
 
 .contact-content {
+	width: 100%;
+	height: auto;
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -38,4 +40,12 @@
 /*SPONSOR PAGE CSS*/
 .sponsor a {
 color: white;
+}
+
+
+/*FOOTER CSS*/ 
+.footer-container {
+	width: 100%;
+	height: auto;
+	background-color: green;
 }
