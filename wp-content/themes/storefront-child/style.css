@@ -5,3 +5,37 @@
  Author:       Eduardo Jostello
  Template:     storefront
 */
+
+#content {
+	background-color: black;
+}
+
+#content p {
+	color: white;
+}
+
+#content h1,h2,h3,h4 {
+	color: white;
+}
+
+/*CONTACT PAGE CSS*/
+
+.contact-content {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/*END OF CONTACT CSS */
+
+
+/*ABOUT PAGE CSS*/
+
+.about-content {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/*SPONSOR PAGE CSS*/
+.sponsor a {
+color: white;
+}
