@@ -57,21 +57,21 @@ get_header(); ?>
 			}
 			?>
 		</font>
-		<section class="contact-header">
+		<section class="contact-container">
 			<h3>Didnt find the right tool for the job, or just wanted to say how aswesome the site is?</h3>
 			<h3>Send us a message, Peace!</h3>
+			<form method="post" id="contactus_form">
+				Your Name:<input type="text" name="yourname" id="yourname" rows="1" value="" />
+				<br /><br />
+				Your Email:<input type="text" name="email" id="email" rows="1" value="" />
+				<br /><br />
+				Subject:<input type="text" name="subject" id="subject" rows="1" value=""></p>
+				<br /><br />
+				Leave a Message:<textarea name="message" id="message" ></textarea>
+				<br /><br />
+				<input type="submit" name="submit" id="submit" value="Send"/>
+			</form>
 		</section>
-		<form method="post" id="contactus_form">
-			Your Name:<input type="text" name="yourname" id="yourname" rows="1" value="" />
-			<br /><br />
-			Your Email:<input type="text" name="email" id="email" rows="1" value="" />
-			<br /><br />
-			Subject:<input type="text" name="subject" id="subject" rows="1" value=""></p>
-			<br /><br />
-			Leave a Message:<textarea name="message" id="message" ></textarea>
-			<br /><br />
-			<input type="submit" name="submit" id="submit" value="Send"/>
-		</form>
 	</div><!-- #content -->
 </div><!-- #primary -->
 <?php
