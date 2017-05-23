@@ -6,17 +6,35 @@
  Template:     storefront
 */
 
-#content {
-	background-color: #f27120;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+html {
+	margin-top: 0 !important;
+}
+
+
 #content p {
-	color: white;
+	color: black;
 }
 
 #content h1,h2,h3,h4 {
-	color: white;
+	color: black;
 }
+
+/*HOME PAGE CSS*/
+
+.site-content {
+	/*background-color: lightgrey;*/
+}
+
+#masthead {
+   margin-bottom: 0;
+}
+
 
 /*CONTACT PAGE CSS*/
 
@@ -37,15 +55,13 @@
 }
 
 
-/*SPONSOR PAGE CSS*/
-.sponsor a {
-color: white;
-}
-
-
 /*FOOTER CSS*/ 
 .footer-container {
 	width: 100%;
-	height: auto;
-	background-color: green;
+	height: auto; 
 }
+
+.footer-header {
+   text-align: center;
+}
+

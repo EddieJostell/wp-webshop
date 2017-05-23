@@ -8,7 +8,7 @@ Template name: About Template
 get_header();
  ?>
  <div class="about-content">
-		<main>
+		
 
 			<?php while ( have_posts() ) : the_post();
 
@@ -25,8 +25,11 @@ get_header();
 
 			endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
+	
 	</div><!-- #primary -->
+	<?php
+      get_sidebar();
+	?>
 <?php
 get_footer();
 ?>

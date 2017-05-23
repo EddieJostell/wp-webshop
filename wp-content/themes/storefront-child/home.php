@@ -6,13 +6,13 @@ Template name: Home-page template
 get_header();
 ?>
 <div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post();
+		<?php while ( have_posts() ) : the_post();
 
-				do_action( 'storefront_page_before' );
+		do_action( 'storefront_page_before' );
 
-				get_template_part( 'content', 'page' );
+		get_template_part( 'content', 'page' );
 
 				/**
 				 * Functions hooked in to storefront_page_after action
@@ -21,11 +21,16 @@ get_header();
 				 */
 				do_action( 'storefront_page_after' );
 
-			endwhile; // End of the loop. ?>
+				endwhile; // End of the loop. ?>
 				<section class="home-page">
-					<h2>Recent Posts</h2>
+					<h1>Recent News!</h1>
 					<?php
-					$args = array("posts_per_page" => 2, "orderby" => "comment_count");
+					if(function_exists('wordpress_rules')) {
+						wordpress_rules();
+					}
+					?>
+					<?php
+					$args = array("posts_per_page" => 2, "orderby" => "DESC");
 					$posts_array = get_posts($args);
 					foreach($posts_array as $post)
 					{
@@ -39,6 +44,5 @@ get_header();
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	<?php
-
 	get_footer();
 	?>
