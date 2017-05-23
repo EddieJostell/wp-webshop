@@ -6,7 +6,7 @@ Template name: Contact Template
 get_header();
  ?>
  <div id="primary">
-		<main id="main" role="main">
+		<main id="main" role="main" class="contact-content">
 
 			<?php while ( have_posts() ) : the_post();
 

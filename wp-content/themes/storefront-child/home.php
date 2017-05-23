@@ -25,11 +25,6 @@ get_header();
 				<section class="home-page">
 					<h1>Recent News!</h1>
 					<?php
-					if(function_exists('wordpress_rules')) {
-						wordpress_rules();
-					}
-					?>
-					<?php
 					$args = array("posts_per_page" => 2, "orderby" => "DESC");
 					$posts_array = get_posts($args);
 					foreach($posts_array as $post)

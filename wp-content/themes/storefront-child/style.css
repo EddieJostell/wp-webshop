@@ -12,11 +12,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	margin-top: 0 !important;
-}
-
-
 #content p {
 	color: black;
 }
@@ -27,21 +22,21 @@ html {
 
 /*HOME PAGE CSS*/
 
-.site-content {
-	/*background-color: lightgrey;*/
-}
-
 #masthead {
    margin-bottom: 0;
 }
 
+.site-main {
+	margin-top: 1rem;
+	/*box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);*/
+}
 
 /*CONTACT PAGE CSS*/
 
 .contact-content {
 	width: 100%;
 	height: auto;
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);*/
 }
 
 
@@ -55,13 +50,22 @@ html {
 }
 
 
+/*SHOP CSS*/
+
+.shop-div {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+
 /*FOOTER CSS*/ 
 .footer-container {
 	width: 100%;
 	height: auto; 
+	background-color: #b80200;
 }
 
 .footer-header {
    text-align: center;
+   color: white;
 }
-
