@@ -5,8 +5,7 @@ Template name: Home-page template
 
 get_header();
 ?>
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+	<div class="site-main about-content">
 
 		<?php while ( have_posts() ) : the_post();
 
@@ -23,13 +22,18 @@ get_header();
 
 				endwhile; // End of the loop. ?>
 				<section class="home-page">
-					<h1>Recent News!</h1>
 					<?php
-					$args = array("posts_per_page" => 2, "orderby" => "DESC");
+					if(function_exists('insert_text')) {
+						insert_text();
+					}
+					?>
+					<!--<h1>Recent News!</h1>-->
+					<?php
+					$args = array("posts_per_page" => 3, "orderby" => "DESC");
 					$posts_array = get_posts($args);
 					foreach($posts_array as $post)
 					{
-						echo "<h1>" . $post->post_title . "</h1><br>";
+						echo "<h3 style='font-weight:bold;'>" . $post->post_title . "</h3><br>";
 						echo "<p>" . $post->post_content . "</p><br>";
 						echo "<p>" . $post->post_date . "</p><br>";
 					} 
@@ -37,7 +41,6 @@ get_header();
 				</ul>  
 			</section>
 		</div><!-- #content -->
-	</div><!-- #primary -->
 	<?php
 	get_footer();
 	?>

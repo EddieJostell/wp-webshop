@@ -8,8 +8,6 @@ Template name: About Template
 get_header();
  ?>
  <div class="about-content">
-		
-
 			<?php while ( have_posts() ) : the_post();
 
 				do_action( 'storefront_page_before' );

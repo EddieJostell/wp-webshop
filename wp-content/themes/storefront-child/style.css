@@ -4,68 +4,76 @@
  Description:  storefront Child Theme
  Author:       Eduardo Jostello
  Template:     storefront
-*/
+ */
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
 
-#content p {
-	color: black;
-}
+ #content p {
+ 	color: black;
+ }
 
-#content h1,h2,h3,h4 {
-	color: black;
-}
+ #content h1,h2,h3,h4 {
+ 	color: black;
+ }
 
-/*HOME PAGE CSS*/
+ /*HOME PAGE CSS*/
 
-#masthead {
-   margin-bottom: 0;
-}
+ #masthead {
+ 	margin-bottom: 0;
+ }
 
-.site-main {
-	margin-top: 1rem;
-	/*box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);*/
-}
-
-/*CONTACT PAGE CSS*/
-
-.contact-content {
-	width: 100%;
-	height: auto;
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);*/
-}
+ .site-main {
+ 	margin-top: 1rem;
+ 	/*box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);*/
+ }
 
 
-/*END OF CONTACT CSS */
+ /*CONTACT PAGE CSS*/
+
+ .contact-content {
+ 	width: 100%;
+ 	height: auto;
+ 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);*/
+ }
 
 
-/*ABOUT PAGE CSS*/
-
-.about-content {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
+ /*END OF CONTACT CSS */
 
 
-/*SHOP CSS*/
+ /*ABOUT PAGE CSS*/
 
-.shop-div {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
+ .about-content {
+ 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+ }
+
+
+ /*SHOP CSS*/
+
+ .shop-div {
+ 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+ }
 
 
 
-/*FOOTER CSS*/ 
-.footer-container {
-	width: 100%;
-	height: auto; 
-	background-color: #b80200;
-}
+ /*FOOTER CSS*/ 
+ .footer-container {
+ 	width: 100%;
+ 	height: auto; 
+ 	background-color: #7a0000;
+ }
 
-.footer-header {
-   text-align: center;
-   color: white;
-}
+ .footer-header {
+ 	text-align: center;
+ 	color: white;
+ }
+
+ @media (min-width: 768px) {
+ 	.col-full {
+  max-width: 100%;
+  padding: 0 2.6em;
+ 	}
+ }
