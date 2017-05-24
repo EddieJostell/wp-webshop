@@ -1,6 +1,6 @@
 <?php
 /*
-* Plugin Name: Text Inserter
+* Plugin Name: Text Snippet Inserter
 * Description: A simple plugin to insert a text snippet wherever you want it.
 * Version: 1.0
 * Author: Eduardo Jostello
